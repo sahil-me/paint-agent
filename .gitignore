@@ -1,0 +1,41 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials
+*service-account*.json
+*credentials*.json
+*.pem
+
+# Local and temporary files
+.bash_history
+
+# Cloud Shell workspace and user-specific files
+.cache/
+.config/
+.local/
+.npm/
+.docker/
+.gemini/
+.rustup/
+.codoss/
+.profile
+.bashrc
+.bash_logout
+.sudo_as_admin_successful
+README-cloudshell.txt
+
+# Editor and workspace-specific files
+.codeoss/
+.vscode/
+
+# Local ADK session data
+.adk/
+*.db
