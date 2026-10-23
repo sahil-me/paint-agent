@@ -1,5 +1,6 @@
 # 🎨 Paint Agent 🤖
 
+https://github.com/user-attachments/assets/5ce7e8f8-15db-4e81-98de-7fec6ee8d9c0
 
 > 🎥 Watch **Paint Agent** in action! 🖌
 
