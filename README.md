@@ -115,44 +115,66 @@ flowchart TD
 
 The repository is organized around the **ADK agent** implementation, its specialized **sub-agents**, and the **Chainlit** user interface.
 
+## 📁 Project Structure
+
 ```text
 paint-agent/
 ├── adk_agent/
 │   ├── chainlit_ui/
-│   │   ├── app.py
-│   │   ├── chainlit.md
-│   │   ├── requirements.txt
 │   │   ├── .chainlit/
-│   │   └── public/
+│   │   │   ├── translations/
+│   │   │   └── config.toml
+│   │   ├── public/
+│   │   ├── app.py
+│   │   └── chainlit.md
 │   │
 │   ├── paint_agent/
+│   │   ├── sub_agents/
+│   │   │   ├── room_planner/
+│   │   │   │   ├── sub_agents/
+│   │   │   │   │   └── coverage_calculator/
+│   │   │   │   │       ├── __init__.py
+│   │   │   │   │       ├── agent.py
+│   │   │   │   │       └── tools.py
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── agent.py
+│   │   │   │
+│   │   │   └── search_agent/
+│   │   │       ├── __init__.py
+│   │   │       └── agent.py
+│   │   │
+│   │   ├── __init__.py
 │   │   ├── agent.py
 │   │   ├── callback_logging.py
 │   │   ├── tools.py
-│   │   ├── requirements.txt
-│   │   └── sub_agents/
-│   │       ├── room_planner/
-│   │       │   └── sub_agents/
-│   │       │       └── coverage_calculator/
-│   │       └── search_agent/
+│   │   └── requirements.txt
 │   │
 │   ├── requirements.txt
 │   └── test_adk.py
 │
 ├── .gitignore
-└── README.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+└── SECURITY.md
 ```
 
 > [!Note]
 > This tree represents the main project layout. Additional files may exist within the sub-agent directories. Refer to the repository for the complete source structure.
 
-### Main Components
+### Key Components
 
-- **`paint_agent/`** — Contains the root agent, supporting tools, callback logging, and specialized sub-agents.
-- **`chainlit_ui/`** — Contains the web interface used to interact with the agent.
-- **`sub_agents/`** — Organizes specialized agent components, including room planning, coverage calculation, and search.
-- **`requirements.txt`** — Lists Python dependencies for the relevant project components.
-- **`test_adk.py`** — Contains test code associated with the ADK project.
+- **`chainlit_ui/`** — Provides the Chainlit-based user interface for interacting with the Paint Agent.
+- **`paint_agent/agent.py`** — Defines the main agent and coordinates the application's agent workflow.
+- **`sub_agents/room_planner/`** — Supports room-planning tasks and delegates paint-coverage calculations.
+- **`coverage_calculator/`** — Contains the agent and tools for paint-coverage calculations.
+- **`search_agent/`** — Handles paint-product search tasks.
+- **`callback_logging.py`** — Contains callback-related logging functionality.
+- **`tools.py`** — Contains tools used by the Paint Agent.
+- **`requirements.txt`** — Lists Python dependencies for the corresponding project directory.
+- **`test_adk.py`** — Contains ADK-related tests.
+- **`CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md`** — Describe contribution, community conduct, and security-reporting guidelines.
 
 ---
 
