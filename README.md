@@ -434,8 +434,6 @@ The following ideas could be considered for future versions of Paint Agent:
 [![Gemini API](https://img.shields.io/badge/Gemini%20API-Documentation-8E75B2?logo=google)](https://ai.google.dev/gemini-api/docs)
 [![Chainlit](https://img.shields.io/badge/Chainlit-Documentation-000000)](https://docs.chainlit.io/)
 [![Python](https://img.shields.io/badge/Python-Documentation-3776AB?logo=python)](https://docs.python.org/3/)
-[![Google Skills](https://img.shields.io/badge/Google%20Skills-Course%20and%20Labs-4285F4?logo=google)](https://www.skills.google/course_templates/1445)
-[![GitHub](https://img.shields.io/badge/GitHub-Documentation-181717?logo=github)](https://docs.github.com/)
 
 ---
 
