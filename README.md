@@ -115,8 +115,6 @@ flowchart TD
 
 The repository is organized around the **ADK agent** implementation, its specialized **sub-agents**, and the **Chainlit** user interface.
 
-## 📁 Project Structure
-
 ```text
 paint-agent/
 ├── adk_agent/
