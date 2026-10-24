@@ -273,7 +273,7 @@ paint-agent/
 
 ## Screenshots
 
-This section will showcase the Paint Agent interface, example conversations, paint-selection workflow, and deployment.
+This section will showcase the **Paint Agent** interface, example conversations, paint-selection workflow, and deployment.
 
 
 ### Paint Agent Interface
